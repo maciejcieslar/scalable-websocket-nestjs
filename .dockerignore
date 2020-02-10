@@ -1,0 +1,14 @@
+# Log files
+npm-debug.log*
+
+# Dependency directories
+node_modules
+npm-debug.log
+
+# Coverage files
+coverage
+.nyc_output
+
+# Documentation files
+/docs
+README.md

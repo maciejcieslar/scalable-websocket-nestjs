@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@src/*": ["src/*"]
+    },
+    "incremental": true,
+    "noUnusedParameters": true,
+    "importHelpers": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

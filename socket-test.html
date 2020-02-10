@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sockets test</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <script>
+      window.s = io('http://localhost:3000', {
+        query: {
+          token: '123',
+        },
+      });
+
+      s.emit('events', { event: 'events', data: { test: true } });
+      s.on('events', (response) => {
+        console.log(response);
+      });
+    </script>
+  </body>
+</html>

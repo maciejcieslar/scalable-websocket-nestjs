@@ -1,0 +1,27 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/arrow-parens": 0,
+    "object-curly-spacing": ["error", "always"],
+    "computed-property-spacing": ["error", "never"],
+    "brace-style": ["error", "1tbs"],
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/explicit-member-accessibility": ["error"],
+    "jest/expect-expect": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "jest/no-test-callback": 0
+  }
+}
